@@ -1,0 +1,8 @@
+<template name="booklist">
+    <h1>List of Books</h1>
+    <ul>
+        {{#each books}}
+            <li><p>{{title}} by <b>{{author}}</b></p></li>
+        {{/each}}
+    </ul>
+</template>
