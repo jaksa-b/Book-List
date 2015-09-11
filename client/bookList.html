@@ -1,8 +1,16 @@
-<template name="booklist">
+<template name="bookList">
     <h1>List of Books</h1>
     <ul>
         {{#each books}}
             <li><p>{{title}} by <b>{{author}}</b></p></li>
         {{/each}}
     </ul>
+    <form class="add-book">
+        Title:<br>
+        <input type="text" name="title">
+        <br>
+        Author:<br>
+        <input type="text" name="author">
+        <input type="submit" value="Add Book">
+    </form>
 </template>
